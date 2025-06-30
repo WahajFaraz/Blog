@@ -1,0 +1,54 @@
+/* global.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: var(--bg, #f8fafc);
+  color: var(--text, #1e293b);
+  transition: all 0.3s linear;
+}
+
+body.light {
+  --bg: #f8fafc;
+  --text: #1e293b;
+  --subtext: #64748b;
+  --border: #e2e8f0;
+  --card-bg: #ffffff;
+  --inputBg: #f8fafc;
+  --codeBg: #f1f5f9;
+  --subtleText: #94a3b8;
+}
+
+body.dark {
+  --bg: #0f172a;
+  --text: #e2e8f0;
+  --subtext: #94a3b8;
+  --border: #334155;
+  --card-bg: #1e293b;
+  --inputBg: #1e293b;
+  --codeBg: #334155;
+  --subtleText: #64748b;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.tippy-box {
+  background-color: var(--card-bg, #fff) !important;
+  color: var(--text, #1e293b) !important;
+  border: 1px solid var(--border, #e2e8f0) !important;
+}
+.tippy-arrow {
+  color: var(--card-bg, #fff) !important;
+} 
